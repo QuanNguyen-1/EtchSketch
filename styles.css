@@ -1,12 +1,126 @@
-.board{
-    width: 600px;
-    height: 600px;
-    display: grid;
-}
+
 
 .flex-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: beige;
 }
 
+.board{
+    width: 700px;
+    height: 700px;
+    display: grid;
+    background-color: white;
+    border-radius: 2px;
+    border: 3px solid black
+}
+
+.board:hover{
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+    min-height: 250px;
+    width: 60vw;
+    height: 60vw;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.buttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 0.3em 1.2em;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 500px;
+    text-align: center;
+    font-size: large;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.blackButton{
+    background-color: white;
+    color: black;
+}
+.blackButton:hover {
+    background-color: gray;
+  
+}
+
+.redButton{
+    background-color: white;
+    color: red;
+}
+
+.redButton:hover{
+    background-color: gray;
+}
+
+.blueButton{
+    background-color: white;
+    color: blue;
+}
+
+.blueButton:hover{
+    background-color: gray;
+}
+
+.eraserButton{
+    background-color: white;
+}
+
+.eraserButton:hover{
+    background-color: gray;
+}
+
+.resetButton{
+    background-color: white;
+}
+
+.resetButton:hover{
+    background-color: gray;
+}
+
+input{
+    width: 150px;
+}
+
+.drawMode{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.error{
+    display: none;
+}
+
+.sizeButton{
+    margin-top: 10px;
+    background-color: white;
+}
+
+.sizeButton:hover{
+    background-color: gray;
+}

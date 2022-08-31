@@ -17,14 +17,17 @@
         <div class="content">
             <div class="board"></div>
             <div class="buttons">
-                <button onclick="changeColor('black')">Black</button>
-                <button onclick="changeColor('red')">Red</button>
-                <button onclick="changeColor('blue')">Blue</button>
-                <button onclick="changeColor('white')">Eraser</button>
-                <button onclick="resetBoard()">Reset</button>
+                <button class="blackButton" onclick="changeColor('black')">Black</button>
+                <button class="redButton" onclick="changeColor('red')">Red</button>
+                <button class="blueButton" onclick="changeColor('blue')">Blue</button>
+                <button class="eraserButton" onclick="changeColor('white')">Eraser</button>
+                <button class="resetButton" onclick="resetBoard()">Reset</button>
             </div>
             <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)"/>
-            <button>Set Size</button>
+            <button class="sizeButton">Set Size</button>
+        </div>
+        <div class="error">
+            Input is not between 2 and 100
         </div>
     </div>
 </body>
